@@ -1,0 +1,14 @@
+#+TITLE: sni-tray
+
+A StatusNotifierItem system tray for Emacs, at the right end of the echo area
+like =exwm-systemtray=. Written for [[https://codeberg.org/ezemtsov/ewm][EWM]].
+
+#+begin_src emacs-lisp
+(use-package sni-tray
+  :vc (:url "https://github.com/adisbladis/sni-tray.el")
+  :config
+  (sni-tray-mode 1))
+#+end_src
+
+Turn it on before starting tray applications. It can't run alongside another
+tray, such as one in a panel.
